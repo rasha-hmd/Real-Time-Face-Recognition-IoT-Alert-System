@@ -24,7 +24,6 @@ An end-to-end computer vision security pipeline that performs real-time facial r
 ├── detect.py             # Recognition engine and distance matching
 ├── main.py               # Video capture loop, threading, and alert scheduling
 ├── pi_sender.py          # HTTP client for Raspberry Pi notification service
-├── .gitignore            # Git exclusion rules (ignores local biometric .dat files)
 ├── requirements.txt      # Python package dependencies
 └── README.md             # Project documentation
 ```
