@@ -1,5 +1,7 @@
 # Real-Time Face Recognition & IoT Alert System
 
+<!-- DEMO: add a GIF or screenshot of the live feed and a Telegram alert here -->
+
 An end-to-end computer vision security pipeline that performs real-time facial recognition via webcam, enables interactive in-stream enrollment, and dispatches rate-limited security alerts and cropped face snapshots over HTTP to a local Raspberry Pi endpoint.
 
 ---
@@ -24,6 +26,7 @@ An end-to-end computer vision security pipeline that performs real-time facial r
 ├── detect.py             # Recognition engine and distance matching
 ├── main.py               # Video capture loop, threading, and alert scheduling
 ├── pi_sender.py          # HTTP client for Raspberry Pi notification service
+├── pi_test.py            # Quick connectivity test for the Raspberry Pi endpoint
 ├── requirements.txt      # Python package dependencies
 └── README.md             # Project documentation
 ```
@@ -58,11 +61,11 @@ An end-to-end computer vision security pipeline that performs real-time facial r
 ## Prerequisites & Installation
 
 ### 1. Python Environment
-Python 3.8 to 3.11 is recommended.
+Python 3.8 to 3.11 is recommended. Enrollment uses `winsound` for the capture beep, so that step currently runs on Windows only.
 
 ```bash
-git clone https://github.com/your-username/face-recognition-iot.git
-cd face-recognition-iot
+git clone https://github.com/rasha-hmd/Real-Time-Face-Recognition-IoT-Alert-System.git
+cd Real-Time-Face-Recognition-IoT-Alert-System
 ```
 
 ### 2. Installing `dlib`
@@ -137,6 +140,6 @@ A minimal receiver running on the Raspberry Pi (using FastAPI or Flask) should a
 
 ---
 
-## License
+## Author
 
-This project is licensed under the MIT License. See `LICENSE` for details.
+**Rasha Hammoud**
