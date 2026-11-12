@@ -1,0 +1,5 @@
+.env
+faces.dat
+*.dat
+__pycache__/
+*.pyc
