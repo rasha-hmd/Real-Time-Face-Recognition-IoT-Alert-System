@@ -1,5 +1,7 @@
-python
 opencv-python
 dlib
 face-recognition
-pickle
+numpy
+requests
+Pillow
+python-dotenv
