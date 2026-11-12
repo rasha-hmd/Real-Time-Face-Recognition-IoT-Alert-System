@@ -5,7 +5,6 @@ import face_recognition
 import pickle
 import os
 import numpy as np
-from jsonschema.exceptions import best_match
 
 
 DATA_FILE = "faces.dat"
