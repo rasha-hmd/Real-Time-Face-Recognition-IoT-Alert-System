@@ -16,7 +16,7 @@ load_dotenv()
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 
-sender = PiSender("192.168.61.11")
+sender = PiSender(os.getenv("PI_IP_ADDRESS", "192.168.1.100"), int(os.getenv("PI_PORT", "8000")))
 
 sent_names = set()
 name_last_sent = {}
